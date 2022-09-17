@@ -1,0 +1,2451 @@
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+index 0000000000000000000000000000000000000000..8bf4d45d6ed0a1d3796ca62a6a386142757ee9f5
+--- /dev/null
++++ b/.idea/.gitignore
+@@ -0,0 +1,6 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+new file mode 100644
+index 0000000000000000000000000000000000000000..6846eebe4b8c70b355783f31a083f8c95eb7f953
+--- /dev/null
++++ b/.idea/compiler.xml
+@@ -0,0 +1,21 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <annotationProcessing>
++      <profile default="true" name="Default" enabled="true" />
++      <profile name="Maven default annotation processors profile" enabled="true">
++        <sourceOutputDir name="target/generated-sources/annotations" />
++        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
++        <outputRelativeToContentRoot value="true" />
++        <module name="wechatPush" />
++        <module name="wechatPush-master" />
++      </profile>
++    </annotationProcessing>
++  </component>
++  <component name="JavacSettings">
++    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
++      <module name="wechatPush" options="-parameters" />
++      <module name="wechatPush-master" options="-parameters" />
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+new file mode 100644
+index 0000000000000000000000000000000000000000..63e900193296f8ed911a1b9f5b051cf908099431
+--- /dev/null
++++ b/.idea/encodings.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/inspectionProfiles/Project_Default.xml b/.idea/inspectionProfiles/Project_Default.xml
+new file mode 100644
+index 0000000000000000000000000000000000000000..fa99c1bf483d02cd385290f953e907e2316ab73c
+--- /dev/null
++++ b/.idea/inspectionProfiles/Project_Default.xml
+@@ -0,0 +1,97 @@
++<component name="InspectionProjectProfileManager">
++  <profile version="1.0">
++    <option name="myName" value="Project Default" />
++    <inspection_tool class="AliAccessStaticViaInstance" enabled="false" level="BLOCKER" enabled_by_default="false" />
++    <inspection_tool class="AliArrayNamingShouldHaveBracket" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AliControlFlowStatementWithoutBraces" enabled="false" level="BLOCKER" enabled_by_default="false" />
++    <inspection_tool class="AliDeprecation" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AliEqualsAvoidNull" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AliLongLiteralsEndingWithLowercaseL" enabled="false" level="BLOCKER" enabled_by_default="false" />
++    <inspection_tool class="AliMissingOverrideAnnotation" enabled="false" level="BLOCKER" enabled_by_default="false" />
++    <inspection_tool class="AliWrapperTypeEquality" enabled="false" level="BLOCKER" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAbstractClassShouldStartWithAbstractNaming" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAbstractMethodOrInterfaceMethodMustUseJavadoc" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAvoidApacheBeanUtilsCopy" enabled="false" level="BLOCKER" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAvoidCallStaticSimpleDateFormat" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAvoidCommentBehindStatement" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAvoidComplexCondition" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAvoidConcurrentCompetitionRandom" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAvoidDoubleOrFloatEqualCompare" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAvoidManuallyCreateThread" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAvoidMissUseOfMathRandom" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAvoidNegationOperator" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAvoidNewDateGetTime" enabled="false" level="BLOCKER" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAvoidPatternCompileInMethod" enabled="false" level="BLOCKER" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAvoidReturnInFinally" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAvoidStartWithDollarAndUnderLineNaming" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaAvoidUseTimer" enabled="false" level="BLOCKER" enabled_by_default="false" />
++    <inspection_tool class="AlibabaBigDecimalAvoidDoubleConstructor" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaBooleanPropertyShouldNotStartWithIs" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaClassCastExceptionWithSubListToArrayList" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaClassCastExceptionWithToArray" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaClassMustHaveAuthor" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaClassNamingShouldBeCamel" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaCollectionInitShouldAssignCapacity" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaCommentsMustBeJavadocFormat" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaConcurrentExceptionWithModifyOriginSubList" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaConstantFieldShouldBeUpperCase" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaCountDownShouldInFinally" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaDontModifyInForeachCircle" enabled="false" level="BLOCKER" enabled_by_default="false" />
++    <inspection_tool class="AlibabaEnumConstantsMustHaveComment" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaExceptionClassShouldEndWithException" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaIbatisMethodQueryForList" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaLockShouldWithTryFinally" enabled="false" level="BLOCKER" enabled_by_default="false" />
++    <inspection_tool class="AlibabaLowerCamelCaseVariableNaming" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaMethodReturnWrapperType" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaMethodTooLong" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaPackageNaming" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaPojoMustOverrideToString" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaPojoMustUsePrimitiveField" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaPojoNoDefaultValue" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaRemoveCommentedCode" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaServiceOrDaoClassShouldEndWithImpl" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaStringConcat" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaSwitchStatement" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaTestClassShouldEndWithTestNaming" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaThreadLocalShouldRemove" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaThreadPoolCreation" enabled="false" level="BLOCKER" enabled_by_default="false" />
++    <inspection_tool class="AlibabaThreadShouldSetName" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaTransactionMustHaveRollback" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaUndefineMagicConstant" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaUnsupportedExceptionWithModifyAsList" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="AlibabaUseQuietReferenceNotation" enabled="false" level="MAJOR" enabled_by_default="false" />
++    <inspection_tool class="AlibabaUseRightCaseForDateFormat" enabled="false" level="CRITICAL" enabled_by_default="false" />
++    <inspection_tool class="JavaDoc" enabled="true" level="WARNING" enabled_by_default="true">
++      <option name="TOP_LEVEL_CLASS_OPTIONS">
++        <value>
++          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
++          <option name="REQUIRED_TAGS" value="" />
++        </value>
++      </option>
++      <option name="INNER_CLASS_OPTIONS">
++        <value>
++          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
++          <option name="REQUIRED_TAGS" value="" />
++        </value>
++      </option>
++      <option name="METHOD_OPTIONS">
++        <value>
++          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
++          <option name="REQUIRED_TAGS" value="@return@param@throws or @exception" />
++        </value>
++      </option>
++      <option name="FIELD_OPTIONS">
++        <value>
++          <option name="ACCESS_JAVADOC_REQUIRED_FOR" value="none" />
++          <option name="REQUIRED_TAGS" value="" />
++        </value>
++      </option>
++      <option name="IGNORE_DEPRECATED" value="false" />
++      <option name="IGNORE_JAVADOC_PERIOD" value="true" />
++      <option name="IGNORE_DUPLICATED_THROWS" value="false" />
++      <option name="IGNORE_POINT_TO_ITSELF" value="false" />
++      <option name="myAdditionalJavadocTags" value="date" />
++    </inspection_tool>
++    <inspection_tool class="MapOrSetKeyShouldOverrideHashCodeEquals" enabled="false" level="CRITICAL" enabled_by_default="false" />
++  </profile>
++</component>
+\ No newline at end of file
+diff --git a/.idea/inspectionProfiles/profiles_settings.xml b/.idea/inspectionProfiles/profiles_settings.xml
+new file mode 100644
+index 0000000000000000000000000000000000000000..0eefe328ab09916b90d7b29ba5c35396c977403c
+--- /dev/null
++++ b/.idea/inspectionProfiles/profiles_settings.xml
+@@ -0,0 +1,5 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="PROJECT_PROFILE" />
++  </settings>
++</component>
+\ No newline at end of file
+diff --git a/.idea/jarRepositories.xml b/.idea/jarRepositories.xml
+new file mode 100644
+index 0000000000000000000000000000000000000000..c7ea92037640e4664f08b5998f6d08fbec36c2cd
+--- /dev/null
++++ b/.idea/jarRepositories.xml
+@@ -0,0 +1,25 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RemoteRepositoriesConfiguration">
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Central Repository" />
++      <option name="url" value="https://repo.maven.apache.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Maven Central repository" />
++      <option name="url" value="https://repo1.maven.org/maven2" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="jboss.community" />
++      <option name="name" value="JBoss Community repository" />
++      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
++    </remote-repository>
++    <remote-repository>
++      <option name="id" value="central" />
++      <option name="name" value="Central Repository" />
++      <option name="url" value="https://maven.aliyun.com/repository/public" />
++    </remote-repository>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+index 0000000000000000000000000000000000000000..d5cd61439e42be16778fe0d90f206a2b02d987e8
+--- /dev/null
++++ b/.idea/misc.xml
+@@ -0,0 +1,12 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="MavenProjectsManager">
++    <option name="originalFiles">
++      <list>
++        <option value="$PROJECT_DIR$/pom.xml" />
++      </list>
++    </option>
++  </component>
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
++</project>
+\ No newline at end of file
+diff --git a/.idea/smartfox_info.xml b/.idea/smartfox_info.xml
+new file mode 100644
+index 0000000000000000000000000000000000000000..1c2584f990e305e762d6d822c77dbd94ea31c7e4
+--- /dev/null
++++ b/.idea/smartfox_info.xml
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="SmartFoxProjectConfig">
++    <option name="projectInspectionClosed" value="true" />
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/uiDesigner.xml b/.idea/uiDesigner.xml
+new file mode 100644
+index 0000000000000000000000000000000000000000..e96534fb27b68192f27f985d3879e173ec77adb8
+--- /dev/null
++++ b/.idea/uiDesigner.xml
+@@ -0,0 +1,124 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Palette2">
++    <group name="Swing">
++      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
++      </item>
++      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
++        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
++        <initial-values>
++          <property name="text" value="Button" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="RadioButton" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="CheckBox" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
++        <initial-values>
++          <property name="text" value="Label" />
++        </initial-values>
++      </item>
++      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
++          <preferred-size width="150" height="-1" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
++          <preferred-size width="150" height="50" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
++          <preferred-size width="200" height="200" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
++      </item>
++      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
++      </item>
++      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
++          <preferred-size width="-1" height="20" />
++        </default-constraints>
++      </item>
++      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
++        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
++      </item>
++      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
++        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
++      </item>
++    </group>
++  </component>
++</project>
+\ No newline at end of file
+diff --git a/.idea/wechatPush-master.iml b/.idea/wechatPush-master.iml
+new file mode 100644
+index 0000000000000000000000000000000000000000..78b2cc53b203f0b97534bb1184cdc7b474339fb4
+--- /dev/null
++++ b/.idea/wechatPush-master.iml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4" />
+\ No newline at end of file
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..f20a22a947150eccbfd6221ca45e11e5e1577ac9
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,155 @@
++
++# (JAVA)微信公众号推送早安问候以及天气
++
++![image](src/main/resources/img/1.png)
++![image](src/main/resources/img/9.jpg)
++
++## 教程: <br />
++
++### **1.注册微信测试账号，编辑模板**
++
++https://mp.weixin.qq.com/debug/cgi-bin/sandbox?t=sandbox/login <br/>
++把appId、secret都配置到application.yml。
++扫码关注得到用户的id,配置到application.yml的userId。
++
++编辑模板:
++
++```
++今天是{{date.DATA}}
++{{lunar.DATA}} {{festival.DATA}}
++{{remark.DATA}}
++{{city.DATA}}的天气: {{weather.DATA}}
++最低气温: {{low.DATA}}度
++最高气温: {{high.DATA}}度
++风力: {{wc_day.DATA}}
++风向: {{wd_day.DATA}}
++今天是我们恋爱的第{{loveDays.DATA}}天
++距离宝宝的生日还有{{birthdays.DATA}}天
++{{rainbow.DATA}}
++```
++
++![image](src/main/resources/img/10.png)
++模板ID配置到application.yml的templateId
++
++### **2.打开百度地图开放平台:**
++
++**地址：https://lbsyun.baidu.com/apiconsole/center#/home** <br/>
++**天气服务接口文档:** **https://lbs.baidu.com/index.php?title=webapi/weather**  <br/>
++**创建应用:选择服务端，ip地址不知道怎么填就填   0.0.0.0/0 不要泄露自己的AK就行**  <br/>
++**https://lbsyun.baidu.com/apiconsole/key#/home**
++
++应用AK配置到application.yml的ak。<br/>
++要查询的城市ID配置到application.yml的district_id。<br/>
++备注:城市对应ID可在https://lbs.baidu.com/index.php?title=webapi/weather 的服务文档的请求参数的district_id一栏下载 “**行政区划编码**” 查看 <br/>
++
++### **3.彩虹屁平台**
++
++https://www.tianapi.com/
++apiKey配置到application.yml的rainbowKey
++
++备注:需要在天行数据注册账号并申请该接口
++
++### **4.如何运行?**
++
++只需修改application.yml里的配置即可运行,代码其他部分无需任何修改。
++
++![image](src/main/resources/img/2.png)
++
++启动项目后打开浏览器输入  localhost/test  即可手动调用。
++定时任务默认每天早8点推送,如需修改可去Task类上修改cron表达式。
++
++![image](src/main/resources/img/3.png)
++
++###### `有问题欢迎留言或者私信`
++
++## 常见问题
++
++
++
++### **1.推送失败：{"errcode":40003,"errmsg":"invalid openid rid: 630576d8-1139d71c-6d68a976"}**
++
++这个是由于userId填的不对,userId是微信公众号上扫码关注后生成的一串字符串,不是关注人的微信号。
++
++![1661309025827](src/main/resources/img/7.png) 
++
++改成下面红框里的重启程序即可
++
++ ![1661309025827](src/main/resources/img/8.png)
++
++### **2.推送失败：{"errcode":40125,"errmsg":"invalid appsecret rid: 6305aafd-5a6dbc88-1da22e34"}**
++
++​    这是由于微信的appsecret没填对
++
++## 代码优化
++
++### **1.关于大家遇到的空指针问题都做了优化处理**。
++
++现在异常情况会反馈到界面上,你们可以根据报错信息查找原因,而不是面对NullPointerException
++
++![1661309025827](src/main/resources/img/4.png)
++
++### 2.为了满足你们的需求,增加了推送给多个关注用户的功能,在userId配置多个即可。
++
++**手动调用结果展示：**
++
++![1661309025827](src/main/resources/img/5.png)
++![1661309025827](src/main/resources/img/6.png)
++**注意**：
++
++模版消息本身是不支持群发的。这些通知的对象都是单个人，而非群体，所以微信接口并没有允许一次传递多个openid。
++代码实现的发送给多个人，本质上是多次调接口（填写几个userId就会调用几次微信发送消息的接口,天气接口和天行数据接口不会重复调用,不会消耗调用次数）。
++一天最多推送100000条。
++具体可查看 [https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1433751277](https://gitee.com/link?target=https%3A%2F%2Fmp.weixin.qq.com%2Fwiki%3Ft%3Dresource%2Fres_main%26id%3Dmp1433751277)
++
++### 3.新增农历生日计算,可在配置界面选择你的生日计算方式。
++
++如果当天是二十四节气或者重大节日（国庆中秋等）也会显示出来。
++
++## 如果我的代码对你有帮助,欢迎给我一个Star
++
++#### 本项目根据博客教程开发而来，码云上有人用我代码只改一下readme文件就上传到自己仓库也不标明原作者，希望大家都能支持原创吧！！！
++
++#### respect!!!
++
++# 关于运行
++
++## 1.下载下来等依赖下载完，配置好参数，运行启动类即可。
++
++最近有很多朋友问我怎么运行，这个项目就是一个springboot项目，直接运行启动类就运行起来了。
++
++因为有很多不会springboot的兄弟，所以我再提一下。首先项目下载到本地，无论是通过git还是zip。
++
++直接在idea打开就行了，通过maven下载项目所需依赖。
++
++## 2.如果没有maven
++
++### 1.先下载maven。
++
++### 2.配置maven系统环境变量。
++
++### 3.在maven的setting.xml里修改本地仓库路径和添加阿里云仓库镜像。
++
++```xml
++<localRepository>F:\pandownload\maven_repository</localRepository>
++```
++
++```xml
++<mirror>  
++    <id>aliyunmaven</id>   
++    <mirrorOf>*</mirrorOf>  
++    <name>阿里云公共仓库</name>    
++    <url>https://maven.aliyun.com/repository/public</url>
++</mirror>
++```
++
++### 4.在idea配置maven安装路径。
++
++![image](src/main/resources/img/11.png)
++
++### 5.利用idea自动下载项目所需依赖。
++
++![image](src/main/resources/img/12.png)
++
++第一次下载依赖会比较慢，因为你的仓库很多依赖都没有，大概需要几分钟到10分钟，下载完没有爆红就可以启动项目了
++
++![image](src/main/resources/img/13.png)
+\ No newline at end of file
+diff --git a/pom.xml b/pom.xml
+new file mode 100644
+index 0000000000000000000000000000000000000000..dcc75ee6f982bcc185144d17b3ebf1baef4f0d24
+--- /dev/null
++++ b/pom.xml
+@@ -0,0 +1,91 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
++         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
++    <modelVersion>4.0.0</modelVersion>
++    <parent>
++        <groupId>org.springframework.boot</groupId>
++        <artifactId>spring-boot-starter-parent</artifactId>
++        <version>2.7.3</version>
++        <relativePath/> <!-- lookup parent from repository -->
++    </parent>
++    <groupId>com.cws</groupId>
++    <artifactId>wechat</artifactId>
++    <version>0.0.1</version>
++    <name>cws</name>
++    <description>微信公众号推送</description>
++    <properties>
++        <java.version>1.8</java.version>
++    </properties>
++    <dependencies>
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter</artifactId>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-test</artifactId>
++            <scope>test</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>org.projectlombok</groupId>
++            <artifactId>lombok</artifactId>
++            <version>1.18.20</version>
++            <scope>provided</scope>
++        </dependency>
++
++        <dependency>
++            <groupId>com.alibaba</groupId>
++            <artifactId>fastjson</artifactId>
++            <version>2.0.7</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-web</artifactId>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-starter-test</artifactId>
++            <scope>test</scope>
++            <exclusions>
++                <exclusion>
++                    <groupId>org.junit.vintage</groupId>
++                    <artifactId>junit-vintage-engine</artifactId>
++                </exclusion>
++            </exclusions>
++        </dependency>
++
++        <dependency>
++            <groupId>com.github.binarywang</groupId>
++            <artifactId>weixin-java-mp</artifactId>
++            <version>3.3.0</version>
++        </dependency>
++
++        <dependency>
++            <groupId>org.springframework.boot</groupId>
++            <artifactId>spring-boot-configuration-processor</artifactId>
++        </dependency>
++    </dependencies>
++
++    <build>
++        <plugins>
++            <plugin>
++                <groupId>org.springframework.boot</groupId>
++                <artifactId>spring-boot-maven-plugin</artifactId>
++            </plugin>
++
++            <plugin>
++                <groupId>org.apache.maven.plugins</groupId>
++                <artifactId>maven-surefire-plugin</artifactId>
++                <version>2.22.2</version>
++                <configuration>
++                    <skipTests>true</skipTests>
++                </configuration>
++            </plugin>
++        </plugins>
++    </build>
++
++</project>
+diff --git a/src/main/java/com/cws/DateUtils/Lunar.java b/src/main/java/com/cws/DateUtils/Lunar.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..c763e6233f37e59b927394d0209a10d385350628
+--- /dev/null
++++ b/src/main/java/com/cws/DateUtils/Lunar.java
+@@ -0,0 +1,19 @@
++package com.cws.DateUtils;
++
++import lombok.Data;
++
++/**
++ * 阴历
++ */
++@Data
++public class Lunar {
++    public int lunarYear;
++    public int lunarMonth;
++    public int lunarDay;
++    public boolean isLeap;
++
++    @Override
++    public String toString() {
++        return lunarYear + "年" + lunarMonth + "月初" + lunarDay;
++    }
++}
+\ No newline at end of file
+diff --git a/src/main/java/com/cws/DateUtils/LunarCalendarFestivalUtils.java b/src/main/java/com/cws/DateUtils/LunarCalendarFestivalUtils.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..7432f3cbd29b054bf3e25c0a26e24baf621fa1c5
+--- /dev/null
++++ b/src/main/java/com/cws/DateUtils/LunarCalendarFestivalUtils.java
+@@ -0,0 +1,587 @@
++package com.cws.DateUtils;
++
++import java.text.ParseException;
++import java.text.SimpleDateFormat;
++import java.util.Calendar;
++import java.util.Date;
++import java.util.HashMap;
++import java.util.Locale;
++import java.util.Map;
++
++/**
++ * 获取输入公历日期的生肖、天干地支、农历年、农历月、农历日、公历节日、农历节日、24节气等数据
++ */
++public class LunarCalendarFestivalUtils {
++    //生肖年
++    private String animal;
++    //干支年
++    private String ganZhiYear;
++    //阴历年
++    private String lunarYear;
++    //阴历月
++    private String lunarMonth;
++    //阴历日
++    private String lunarDay;
++    //阳历节日
++    private String solarFestival;
++    //阴历节日
++    private String lunarFestival;
++    //节气
++    private String lunarTerm;
++
++    /**
++     * 获取查询日期的年份生肖
++     *
++     * @return
++     */
++    public String getAnimal() {
++        return animal;
++    }
++
++    /**
++     * 获取查询日期年份的天干地支
++     *
++     * @return
++     */
++    public String getGanZhiYear() {
++        return ganZhiYear;
++    }
++
++    /**
++     * 获取查询日期的农历年份
++     *
++     * @return
++     */
++    public String getLunarYear() {
++        return lunarYear;
++    }
++
++    /**
++     * 获取查询日期的农历月份
++     *
++     * @return
++     */
++    public String getLunarMonth() {
++        return lunarMonth;
++    }
++
++    /**
++     * 获取查询日期的农历日
++     *
++     * @return
++     */
++    public String getLunarDay() {
++        return lunarDay;
++    }
++
++    /**
++     * 获取查询日期的公历节日（不是节日返回空）
++     *
++     * @return
++     */
++    public String getSolarFestival() {
++        return solarFestival;
++    }
++
++    /**
++     * 获取查询日期的农历节日（不是节日返回空）
++     *
++     * @return
++     */
++    public String getLunarFestival() {
++        return lunarFestival;
++    }
++
++    /**
++     * 获取查询日期的节气数据（不是节气返回空）
++     *
++     * @return
++     */
++    public String getLunarTerm() {
++        return lunarTerm;
++    }
++
++
++    final static long[] lunarInfo = new long[]{
++            0x04bd8, 0x04ae0, 0x0a570, 0x054d5, 0x0d260, 0x0d950, 0x16554, 0x056a0, 0x09ad0, 0x055d2,
++            0x04ae0, 0x0a5b6, 0x0a4d0, 0x0d250, 0x1d255, 0x0b540, 0x0d6a0, 0x0ada2, 0x095b0, 0x14977,
++            0x04970, 0x0a4b0, 0x0b4b5, 0x06a50, 0x06d40, 0x1ab54, 0x02b60, 0x09570, 0x052f2, 0x04970,
++            0x06566, 0x0d4a0, 0x0ea50, 0x06e95, 0x05ad0, 0x02b60, 0x186e3, 0x092e0, 0x1c8d7, 0x0c950,
++            0x0d4a0, 0x1d8a6, 0x0b550, 0x056a0, 0x1a5b4, 0x025d0, 0x092d0, 0x0d2b2, 0x0a950, 0x0b557,
++            0x06ca0, 0x0b550, 0x15355, 0x04da0, 0x0a5d0, 0x14573, 0x052d0, 0x0a9a8, 0x0e950, 0x06aa0,
++            0x0aea6, 0x0ab50, 0x04b60, 0x0aae4, 0x0a570, 0x05260, 0x0f263, 0x0d950, 0x05b57, 0x056a0,
++            0x096d0, 0x04dd5, 0x04ad0, 0x0a4d0, 0x0d4d4, 0x0d250, 0x0d558, 0x0b540, 0x0b5a0, 0x195a6,
++            0x095b0, 0x049b0, 0x0a974, 0x0a4b0, 0x0b27a, 0x06a50, 0x06d40, 0x0af46, 0x0ab60, 0x09570,
++            0x04af5, 0x04970, 0x064b0, 0x074a3, 0x0ea50, 0x06b58, 0x055c0, 0x0ab60, 0x096d5, 0x092e0,
++            0x0c960, 0x0d954, 0x0d4a0, 0x0da50, 0x07552, 0x056a0, 0x0abb7, 0x025d0, 0x092d0, 0x0cab5,
++            0x0a950, 0x0b4a0, 0x0baa4, 0x0ad50, 0x055d9, 0x04ba0, 0x0a5b0, 0x15176, 0x052b0, 0x0a930,
++            0x07954, 0x06aa0, 0x0ad50, 0x05b52, 0x04b60, 0x0a6e6, 0x0a4e0, 0x0d260, 0x0ea65, 0x0d530,
++            0x05aa0, 0x076a3, 0x096d0, 0x04bd7, 0x04ad0, 0x0a4d0, 0x1d0b6, 0x0d250, 0x0d520, 0x0dd45,
++            0x0b5a0, 0x056d0, 0x055b2, 0x049b0, 0x0a577, 0x0a4b0, 0x0aa50, 0x1b255, 0x06d20, 0x0ada0
++    };
++    //阳历天数
++    final static int[] solarMonths = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
++    //生肖
++    final static String[] animals = new String[]{"鼠", "牛", "虎", "兔", "龙", "蛇", "马", "羊", "猴", "鸡", "狗", "猪"};
++    //天干
++    final static String[] tGan = new String[]{"甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"};
++    //地支
++    final static String[] dZhi = new String[]{"子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥"};
++    //二十四节气
++    final static String[] solarTerms = new String[]{"小寒", "大寒", "立春", "雨水", "惊蛰", "春分", "清明", "谷雨", "立夏",
++            "小满", "芒种", "夏至", "小暑", "大暑", "立秋", "处暑", "白露", "秋分", "寒露", "霜降", "立冬", "小雪", "大雪", "冬至"};
++    //二十四节气日期偏移度
++    private static final double D = 0.2422;
++    //特殊年份节气日期偏移
++    private final static Map<Integer, Integer[]> INCREASE_OFFSET_MAP = new HashMap<Integer, Integer[]>();//+1偏移
++    private final static Map<Integer, Integer[]> DECREASE_OFFSET_MAP = new HashMap<Integer, Integer[]>();//-1偏移
++
++    static {
++        INCREASE_OFFSET_MAP.put(0, new Integer[]{1982});//小寒
++        DECREASE_OFFSET_MAP.put(0, new Integer[]{2019});//小寒
++        INCREASE_OFFSET_MAP.put(1, new Integer[]{2082});//大寒
++        DECREASE_OFFSET_MAP.put(3, new Integer[]{2026});//雨水
++        INCREASE_OFFSET_MAP.put(5, new Integer[]{2084});//春分
++        INCREASE_OFFSET_MAP.put(9, new Integer[]{2008});//小满
++        INCREASE_OFFSET_MAP.put(10, new Integer[]{1902});//芒种
++        INCREASE_OFFSET_MAP.put(11, new Integer[]{1928});//夏至
++        INCREASE_OFFSET_MAP.put(12, new Integer[]{1925, 2016});//小暑
++        INCREASE_OFFSET_MAP.put(13, new Integer[]{1922});//大暑
++        INCREASE_OFFSET_MAP.put(14, new Integer[]{2002});//立秋
++        INCREASE_OFFSET_MAP.put(16, new Integer[]{1927});//白露
++        INCREASE_OFFSET_MAP.put(17, new Integer[]{1942});//秋分
++        INCREASE_OFFSET_MAP.put(19, new Integer[]{2089});//霜降
++        INCREASE_OFFSET_MAP.put(20, new Integer[]{2089});//立冬
++        INCREASE_OFFSET_MAP.put(21, new Integer[]{1978});//小雪
++        INCREASE_OFFSET_MAP.put(22, new Integer[]{1954});//大雪
++        DECREASE_OFFSET_MAP.put(23, new Integer[]{1918, 2021});//冬至
++    }
++
++    //定义一个二维数组，第一维数组存储的是20世纪的节气C值，第二维数组存储的是21世纪的节气C值,0到23个，依次代表立春、雨水...大寒节气的C值
++    private static final double[][] CENTURY_ARRAY = {
++            {6.11, 20.84, 4.6295, 19.4599, 6.3826, 21.4155, 5.59, 20.888, 6.318, 21.86, 6.5, 22.2, 7.928, 23.65, 8.35, 23.95, 8.44, 23.822, 9.098, 24.218, 8.218, 23.08, 7.9, 22.6},
++            {5.4055, 20.12, 3.87, 18.73, 5.63, 20.646, 4.81, 20.1, 5.52, 21.04, 5.678, 21.37, 7.108, 22.83, 7.5, 23.13, 7.646, 23.042, 8.318, 23.438, 7.438, 22.36, 7.18, 21.94}
++    };
++    //农历月份
++    final static String lunarNumber[] = {"一", "二", "三", "四", "五", "六", "七", "八", "九", "十", "十一", "十二"};
++    //农历年
++    final static String[] lunarYears = new String[]{"零", "一", "二", "三", "四", "五", "六", "七", "八", "九"};
++    final static String[] chineseTen = new String[]{"初", "十", "廿", "卅"};
++    //农历节日
++    final static String[] lunarHoliday = new String[]{"0101 春节", "0115 元宵节", "0202 龙头节", "0505 端午节", "0707 七夕节", "0715 中元节",
++            "0815 中秋节", "0909 重阳节", "1001 寒衣节", "1015 下元节", "1208 腊八节", "1223 小年"};
++    //公立节日
++    final static String[] solarHoliday = new String[]{"0101 元旦", "0214 情人节", "0308 妇女节", "0312 植树节", "0315 消费者权益日",
++            "0401 愚人节", "0422 地球日", "0423 读书日", "0501 劳动节", "0504 青年节", "0512 护士节", "0518 博物馆日", "0519 旅游日", "0601 儿童节",
++            "0701 建党节", "0801 建军节", "0910 教师节", "1001 国庆节", "1024 联合国日", "1204 宪法日", "1224 平安夜", "1225 圣诞节"};
++    //格式化日期
++    static SimpleDateFormat chineseDateFormat = new SimpleDateFormat("yyyy年MM月dd日", Locale.CHINA);
++    static SimpleDateFormat solarDateFormat = new SimpleDateFormat("yyyy-MM-dd");
++
++    /**
++     * 返回农历y年的总天数
++     *
++     * @param y
++     * @return
++     */
++    private int lunarYearDays(int y) {
++        int i, sum = 348;
++        for (i = 0x8000; i > 0x8; i >>= 1) {
++            sum += ((lunarInfo[y - 1900] & i) != 0 ? 1 : 0);
++        }
++        return (sum + leapDays(y));
++    }
++
++    /**
++     * 返回农历y年闰月的天数
++     */
++    private int leapDays(int y) {
++        if (leapMonth(y) != 0) {
++            return ((lunarInfo[y - 1900] & 0x10000) != 0 ? 30 : 29);
++        } else
++            return 0;
++    }
++
++    /**
++     * 判断y年的农历中那个月是闰月,不是闰月返回0
++     *
++     * @param y
++     * @return
++     */
++    private int leapMonth(int y) {
++        return (int) (lunarInfo[y - 1900] & 0xf);
++    }
++
++    /**
++     * 返回农历y年m月的总天数
++     *
++     * @param y
++     * @param m
++     * @return
++     */
++    private int monthDays(int y, int m) {
++        return ((lunarInfo[y - 1900] & (0x10000 >> m)) != 0 ? 30 : 29);
++    }
++
++    /**
++     * 获取阴历年
++     *
++     * @param year
++     * @return
++     */
++    private String getLunarYearString(String year) {
++        int y1 = Integer.parseInt(year.charAt(0) + "");
++        int y2 = Integer.parseInt(year.charAt(1) + "");
++        int y3 = Integer.parseInt(year.charAt(2) + "");
++        int y4 = Integer.parseInt(year.charAt(3) + "");
++        return lunarYears[y1] + lunarYears[y2] + lunarYears[y3] + lunarYears[y4];
++    }
++
++    /**
++     * 获取阴历日
++     */
++    private String getLunarDayString(int day) {
++        int n = day % 10 == 0 ? 9 : day % 10 - 1;
++        if (day > 30)
++            return "";
++        if (day == 10)
++            return "初十";
++        else
++            return chineseTen[day / 10] + lunarNumber[n];
++    }
++
++    /**
++     * 特例,特殊的年分的节气偏移量,由于公式并不完善，所以算出的个别节气的第几天数并不准确，在此返回其偏移量
++     *
++     * @param year 年份
++     * @param n    节气编号
++     * @return 返回其偏移量
++     */
++    private int specialYearOffset(int year, int n) {
++        int offset = 0;
++        offset += getOffset(DECREASE_OFFSET_MAP, year, n, -1);
++        offset += getOffset(INCREASE_OFFSET_MAP, year, n, 1);
++        return offset;
++    }
++
++    /**
++     * 节气偏移量计算
++     *
++     * @param map
++     * @param year
++     * @param n
++     * @param offset
++     * @return
++     */
++    private int getOffset(Map<Integer, Integer[]> map, int year, int n, int offset) {
++        int off = 0;
++        Integer[] years = map.get(n);
++        if (null != years) {
++            for (int i : years) {
++                if (i == year) {
++                    off = offset;
++                    break;
++                }
++            }
++        }
++        return off;
++    }
++
++    /**
++     * 获取某年的第n个节气为几日(从0小寒起算)
++     *
++     * @param year
++     * @param n
++     * @return
++     */
++    private int sTerm(int year, int n) {
++        double centuryValue = 0;//节气的世纪值，每个节气的每个世纪值都不同
++        int centuryIndex = -1;
++        if (year >= 1901 && year <= 2000) {//20世纪
++            centuryIndex = 0;
++        } else if (year >= 2001 && year <= 2100) {//21世纪
++            centuryIndex = 1;
++        } else {
++            throw new RuntimeException("不支持此年份：" + year + "，目前只支持1901年到2100年的时间范围");
++        }
++        centuryValue = CENTURY_ARRAY[centuryIndex][n];
++        int dateNum = 0;
++
++        int y = year % 100;//步骤1:取年分的后两位数
++        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {//闰年
++            if (n == 0 || n == 1 || n == 2 || n == 3) {
++                //注意：凡闰年3月1日前闰年数要减一，即：L=[(Y-1)/4],因为小寒、大寒、立春、雨水这两个节气都小于3月1日,所以 y = y-1
++                y = y - 1;//步骤2
++            }
++        }
++        dateNum = (int) (y * D + centuryValue) - (int) (y / 4);//步骤3，使用公式[Y*D+C]-L计算
++        dateNum += specialYearOffset(year, n);//步骤4，加上特殊的年分的节气偏移量
++        return dateNum;
++    }
++
++    /**
++     * 母亲节和父亲节
++     *
++     * @param year
++     * @param month
++     * @param day
++     * @return
++     */
++    private String getMotherOrFatherDay(int year, int month, int day) {
++        if (month != 5 && month != 6) return null;
++        if ((month == 5 && (day < 8 || day > 14)) || (month == 6 && (day < 15 || day > 21))) return null;
++        Calendar calendar = Calendar.getInstance();
++        calendar.set(year, month - 1, 1);
++        int weekDate = calendar.get(Calendar.DAY_OF_WEEK);
++        weekDate = (weekDate == 1) ? 7 : weekDate - 1;
++        switch (month) {
++            case 5:
++                if (day == 15 - weekDate) {
++                    return "母亲节";
++                }
++                break;
++            case 6:
++                if (day == 22 - weekDate) {
++                    return "父亲节";
++                }
++                break;
++        }
++        return null;
++    }
++
++    /**
++     * 感恩节
++     *
++     * @param year
++     * @param month
++     * @param day
++     * @return
++     */
++    private String thanksgiving(int year, int month, int day) {
++        if (month != 11) return null;
++        if ((month == 11 && (day < 19 || day > 28))) return null;
++        Calendar calendar = Calendar.getInstance();
++        calendar.set(year, month - 1, 1);
++        int weekDate = calendar.get(Calendar.DAY_OF_WEEK);
++        weekDate = (weekDate == 1) ? 7 : weekDate - 1;
++        switch (month) {
++            case 11:
++                if (day == 29 - weekDate + 4) {
++                    return "感恩节";
++                }
++                break;
++        }
++        return null;
++    }
++
++    /**
++     * 获取复活节
++     *
++     * @param year
++     * @param month
++     * @param day
++     * @return
++     */
++    private String getEasterDay(int year, int month, int day) {
++        int n = year - 1900;
++        int a = n % 19;
++        int q = n / 4;
++        int b = (7 * a + 1) / 19;
++        int m = (11 * a + 4 - b) % 29;
++        int w = (n + q + 31 - m) % 7;
++        int answer = 25 - m - w;
++        String easterDay = "";
++        if (answer > 0) {
++            easterDay = year + "-" + 4 + "-" + answer;
++        } else {
++            easterDay = year + "-" + 3 + "-" + (31 + answer);
++        }
++        String searchDay = year + "-" + month + "-" + day;
++        if (searchDay.equals(easterDay)) {
++            return "复活节";
++        }
++        return null;
++    }
++
++    /**
++     * 输入公历日期初始化当前日期的生肖、天干地支、农历年、农历月、农历日、公历节日、农历节日、24节气
++     * 输入日期的格式为(YYYY-MM-DD)
++     *
++     * @param currentDate
++     */
++    public void initLunarCalendarInfo(String currentDate) {
++        String[] splitDate = currentDate.split("-");
++        //设置生肖
++        int year = Integer.parseInt(splitDate[0]);
++        this.animal = animals[(year - 4) % 12];
++        //设置天干地支
++        int num = year - 1900 + 36;
++        this.ganZhiYear = (tGan[num % 10] + dZhi[num % 12]);
++        ///////////设置阴历/////////////////////////////////////////////////////////
++        //基准日期
++        Date baseDate = null;
++        //当前日期
++        Date nowaday = null;
++        try {
++            baseDate = chineseDateFormat.parse("1900年1月31日");
++            nowaday = solarDateFormat.parse(currentDate);
++        } catch (ParseException e) {
++            e.printStackTrace();
++        }
++        // 获取当前日期与1900年1月31日相差的天数
++        int offset = (int) ((nowaday.getTime() - baseDate.getTime()) / 86400000L);
++
++        //用offset减去每农历年的天数，计算当天是农历第几天 iYear最终结果是农历的年份
++        int iYear, daysOfYear = 0;
++        for (iYear = 1900; iYear < 10000 && offset > 0; iYear++) {
++            daysOfYear = lunarYearDays(iYear);
++            offset -= daysOfYear;
++        }
++        if (offset < 0) {
++            offset += daysOfYear;
++            iYear--;
++        }
++        this.lunarYear = getLunarYearString(iYear + "");
++        int leapMonth = leapMonth(iYear); // 闰哪个月,1-12
++        boolean leap = false;
++
++        // 用当年的天数offset,逐个减去每月（农历）的天数，求出当天是本月的第几天
++        int iMonth, daysOfMonth = 0;
++        for (iMonth = 1; iMonth < 13 && offset > 0; iMonth++) {
++            // 闰月
++            if (leapMonth > 0 && iMonth == (leapMonth + 1) && !leap) {
++                --iMonth;
++                leap = true;
++                daysOfMonth = leapDays(iYear);
++            } else
++                daysOfMonth = monthDays(iYear, iMonth);
++
++            offset -= daysOfMonth;
++            // 解除闰月
++            if (leap && iMonth == (leapMonth + 1))
++                leap = false;
++        }
++        // offset为0时，并且刚才计算的月份是闰月，要校正
++        if (offset == 0 && leapMonth > 0 && iMonth == leapMonth + 1) {
++            if (leap) {
++                leap = false;
++            } else {
++                leap = true;
++                --iMonth;
++            }
++        }
++        // offset小于0时，也要校正
++        if (offset < 0) {
++            offset += daysOfMonth;
++            --iMonth;
++        }
++        // 设置对应的阴历月份
++        this.lunarMonth = lunarNumber[iMonth - 1];
++        if ("一".equals(this.lunarMonth)) {
++            this.lunarMonth = "正";
++        }
++        if ("十二".equals(this.lunarMonth)) {
++            this.lunarMonth = "腊";
++        }
++        if (leap) {
++            this.lunarMonth = "闰" + this.lunarMonth;
++        }
++
++        //设置阴历日
++        int iDay = offset + 1;
++        this.lunarDay = getLunarDayString(iDay);
++
++        //设置节气
++        int month = Integer.parseInt(splitDate[1]);
++        int day = Integer.parseInt(splitDate[2]);
++        if (day == sTerm(year, (month - 1) * 2)) {
++            this.lunarTerm = solarTerms[(month - 1) * 2];
++        } else if (day == sTerm(year, (month - 1) * 2 + 1)) {
++            this.lunarTerm = solarTerms[(month - 1) * 2 + 1];
++        } else {
++            this.lunarTerm = "";
++        }
++
++        //设置阳历节日
++        String solarFestival = "";
++        for (int i = 0; i < solarHoliday.length; i++) {
++            // 返回公历节假日名称
++            String sd = solarHoliday[i].split(" ")[0]; // 节假日的日期
++            String sdv = solarHoliday[i].split(" ")[1]; // 节假日的名称
++            String smonth_v = splitDate[1];
++            String sday_v = splitDate[2];
++            String smd = smonth_v + sday_v;
++            if (sd.trim().equals(smd.trim())) {
++                solarFestival = sdv;
++                break;
++            }
++        }
++        //判断节日是否是父亲节或母亲节
++        String motherOrFatherDay = getMotherOrFatherDay(year, month, day);
++        if (motherOrFatherDay != null) {
++            solarFestival = motherOrFatherDay;
++        }
++        //判断节日是否是复活节
++        String easterDay = getEasterDay(year, month, day);
++        if (easterDay != null) {
++            solarFestival = easterDay;
++        }
++        //判断节日是否是感恩节
++        String thanksgiving = thanksgiving(year, month, day);
++        if (thanksgiving != null) {
++            solarFestival = thanksgiving;
++        }
++        this.solarFestival = solarFestival;
++
++        //设置阴历节日
++        String lunarFestival = "";
++        for (int i = 0; i < lunarHoliday.length; i++) {
++            //阴历闰月节日
++            if (leap) {
++                break;
++            }
++            // 返回农历节假日名称
++            String ld = lunarHoliday[i].split(" ")[0]; // 节假日的日期
++            String ldv = lunarHoliday[i].split(" ")[1]; // 节假日的名称
++            String lmonth_v = iMonth + "";
++            String lday_v = iDay + "";
++            String lmd = "";
++            if (iMonth < 10) {
++                lmonth_v = "0" + iMonth;
++            }
++            if (iDay < 10) {
++                lday_v = "0" + iDay;
++            }
++            lmd = lmonth_v + lday_v;
++            if ("12".equals(lmonth_v)) { // 除夕夜需要特殊处理
++                if ((daysOfMonth == 29 && iDay == 29) || (daysOfMonth == 30 && iDay == 30)) {
++                    lunarFestival = "除夕";
++                    break;
++                }
++            }
++            if (ld.trim().equals(lmd.trim())) {
++                lunarFestival = ldv;
++                break;
++            }
++        }
++        if ("清明".equals(this.lunarTerm)) {
++            lunarFestival = "清明节";
++        }
++        this.lunarFestival = lunarFestival;
++    }
++
++    /**
++     * 测试方法
++     *
++     * @param args
++     */
++    public static void main(String[] args) {
++        LunarCalendarFestivalUtils festival = new LunarCalendarFestivalUtils();
++        festival.initLunarCalendarInfo("2022-08-27");
++        System.out.println("农历" + festival.getLunarYear() + "年" + festival.getLunarMonth() + "月" + festival.getLunarDay() + "日");
++        System.out.println(festival.getGanZhiYear() + "【" + festival.getAnimal() + "】年");
++        System.out.println(festival.getLunarTerm());
++        System.out.println(festival.getSolarFestival());
++        System.out.println(festival.getLunarFestival());
++    }
++}
+\ No newline at end of file
+diff --git a/src/main/java/com/cws/DateUtils/LunarSolarConverter.java b/src/main/java/com/cws/DateUtils/LunarSolarConverter.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..71eab9b27a400d46f4336eda6a444abba59c253d
+--- /dev/null
++++ b/src/main/java/com/cws/DateUtils/LunarSolarConverter.java
+@@ -0,0 +1,200 @@
++package com.cws.DateUtils;
++
++
++public class LunarSolarConverter {
++    /*
++     * |----4位闰月|-------------13位1为30天，0为29天|
++     */
++    private static int[] lunar_month_days = {1887, 0x1694, 0x16aa, 0x4ad5,
++            0xab6, 0xc4b7, 0x4ae, 0xa56, 0xb52a, 0x1d2a, 0xd54, 0x75aa, 0x156a,
++            0x1096d, 0x95c, 0x14ae, 0xaa4d, 0x1a4c, 0x1b2a, 0x8d55, 0xad4,
++            0x135a, 0x495d, 0x95c, 0xd49b, 0x149a, 0x1a4a, 0xbaa5, 0x16a8,
++            0x1ad4, 0x52da, 0x12b6, 0xe937, 0x92e, 0x1496, 0xb64b, 0xd4a,
++            0xda8, 0x95b5, 0x56c, 0x12ae, 0x492f, 0x92e, 0xcc96, 0x1a94,
++            0x1d4a, 0xada9, 0xb5a, 0x56c, 0x726e, 0x125c, 0xf92d, 0x192a,
++            0x1a94, 0xdb4a, 0x16aa, 0xad4, 0x955b, 0x4ba, 0x125a, 0x592b,
++            0x152a, 0xf695, 0xd94, 0x16aa, 0xaab5, 0x9b4, 0x14b6, 0x6a57,
++            0xa56, 0x1152a, 0x1d2a, 0xd54, 0xd5aa, 0x156a, 0x96c, 0x94ae,
++            0x14ae, 0xa4c, 0x7d26, 0x1b2a, 0xeb55, 0xad4, 0x12da, 0xa95d,
++            0x95a, 0x149a, 0x9a4d, 0x1a4a, 0x11aa5, 0x16a8, 0x16d4, 0xd2da,
++            0x12b6, 0x936, 0x9497, 0x1496, 0x1564b, 0xd4a, 0xda8, 0xd5b4,
++            0x156c, 0x12ae, 0xa92f, 0x92e, 0xc96, 0x6d4a, 0x1d4a, 0x10d65,
++            0xb58, 0x156c, 0xb26d, 0x125c, 0x192c, 0x9a95, 0x1a94, 0x1b4a,
++            0x4b55, 0xad4, 0xf55b, 0x4ba, 0x125a, 0xb92b, 0x152a, 0x1694,
++            0x96aa, 0x15aa, 0x12ab5, 0x974, 0x14b6, 0xca57, 0xa56, 0x1526,
++            0x8e95, 0xd54, 0x15aa, 0x49b5, 0x96c, 0xd4ae, 0x149c, 0x1a4c,
++            0xbd26, 0x1aa6, 0xb54, 0x6d6a, 0x12da, 0x1695d, 0x95a, 0x149a,
++            0xda4b, 0x1a4a, 0x1aa4, 0xbb54, 0x16b4, 0xada, 0x495b, 0x936,
++            0xf497, 0x1496, 0x154a, 0xb6a5, 0xda4, 0x15b4, 0x6ab6, 0x126e,
++            0x1092f, 0x92e, 0xc96, 0xcd4a, 0x1d4a, 0xd64, 0x956c, 0x155c,
++            0x125c, 0x792e, 0x192c, 0xfa95, 0x1a94, 0x1b4a, 0xab55, 0xad4,
++            0x14da, 0x8a5d, 0xa5a, 0x1152b, 0x152a, 0x1694, 0xd6aa, 0x15aa,
++            0xab4, 0x94ba, 0x14b6, 0xa56, 0x7527, 0xd26, 0xee53, 0xd54, 0x15aa,
++            0xa9b5, 0x96c, 0x14ae, 0x8a4e, 0x1a4c, 0x11d26, 0x1aa4, 0x1b54,
++            0xcd6a, 0xada, 0x95c, 0x949d, 0x149a, 0x1a2a, 0x5b25, 0x1aa4,
++            0xfb52, 0x16b4, 0xaba, 0xa95b, 0x936, 0x1496, 0x9a4b, 0x154a,
++            0x136a5, 0xda4, 0x15ac};
++
++    private static int[] solar_1_1 = {1887, 0xec04c, 0xec23f, 0xec435, 0xec649,
++            0xec83e, 0xeca51, 0xecc46, 0xece3a, 0xed04d, 0xed242, 0xed436,
++            0xed64a, 0xed83f, 0xeda53, 0xedc48, 0xede3d, 0xee050, 0xee244,
++            0xee439, 0xee64d, 0xee842, 0xeea36, 0xeec4a, 0xeee3e, 0xef052,
++            0xef246, 0xef43a, 0xef64e, 0xef843, 0xefa37, 0xefc4b, 0xefe41,
++            0xf0054, 0xf0248, 0xf043c, 0xf0650, 0xf0845, 0xf0a38, 0xf0c4d,
++            0xf0e42, 0xf1037, 0xf124a, 0xf143e, 0xf1651, 0xf1846, 0xf1a3a,
++            0xf1c4e, 0xf1e44, 0xf2038, 0xf224b, 0xf243f, 0xf2653, 0xf2848,
++            0xf2a3b, 0xf2c4f, 0xf2e45, 0xf3039, 0xf324d, 0xf3442, 0xf3636,
++            0xf384a, 0xf3a3d, 0xf3c51, 0xf3e46, 0xf403b, 0xf424e, 0xf4443,
++            0xf4638, 0xf484c, 0xf4a3f, 0xf4c52, 0xf4e48, 0xf503c, 0xf524f,
++            0xf5445, 0xf5639, 0xf584d, 0xf5a42, 0xf5c35, 0xf5e49, 0xf603e,
++            0xf6251, 0xf6446, 0xf663b, 0xf684f, 0xf6a43, 0xf6c37, 0xf6e4b,
++            0xf703f, 0xf7252, 0xf7447, 0xf763c, 0xf7850, 0xf7a45, 0xf7c39,
++            0xf7e4d, 0xf8042, 0xf8254, 0xf8449, 0xf863d, 0xf8851, 0xf8a46,
++            0xf8c3b, 0xf8e4f, 0xf9044, 0xf9237, 0xf944a, 0xf963f, 0xf9853,
++            0xf9a47, 0xf9c3c, 0xf9e50, 0xfa045, 0xfa238, 0xfa44c, 0xfa641,
++            0xfa836, 0xfaa49, 0xfac3d, 0xfae52, 0xfb047, 0xfb23a, 0xfb44e,
++            0xfb643, 0xfb837, 0xfba4a, 0xfbc3f, 0xfbe53, 0xfc048, 0xfc23c,
++            0xfc450, 0xfc645, 0xfc839, 0xfca4c, 0xfcc41, 0xfce36, 0xfd04a,
++            0xfd23d, 0xfd451, 0xfd646, 0xfd83a, 0xfda4d, 0xfdc43, 0xfde37,
++            0xfe04b, 0xfe23f, 0xfe453, 0xfe648, 0xfe83c, 0xfea4f, 0xfec44,
++            0xfee38, 0xff04c, 0xff241, 0xff436, 0xff64a, 0xff83e, 0xffa51,
++            0xffc46, 0xffe3a, 0x10004e, 0x100242, 0x100437, 0x10064b, 0x100841,
++            0x100a53, 0x100c48, 0x100e3c, 0x10104f, 0x101244, 0x101438,
++            0x10164c, 0x101842, 0x101a35, 0x101c49, 0x101e3d, 0x102051,
++            0x102245, 0x10243a, 0x10264e, 0x102843, 0x102a37, 0x102c4b,
++            0x102e3f, 0x103053, 0x103247, 0x10343b, 0x10364f, 0x103845,
++            0x103a38, 0x103c4c, 0x103e42, 0x104036, 0x104249, 0x10443d,
++            0x104651, 0x104846, 0x104a3a, 0x104c4e, 0x104e43, 0x105038,
++            0x10524a, 0x10543e, 0x105652, 0x105847, 0x105a3b, 0x105c4f,
++            0x105e45, 0x106039, 0x10624c, 0x106441, 0x106635, 0x106849,
++            0x106a3d, 0x106c51, 0x106e47, 0x10703c, 0x10724f, 0x107444,
++            0x107638, 0x10784c, 0x107a3f, 0x107c53, 0x107e48};
++
++    private static int GetBitInt(int data, int length, int shift) {
++        return (data & (((1 << length) - 1) << shift)) >> shift;
++    }
++
++    // WARNING: Dates before Oct. 1582 are inaccurate
++    private static long SolarToInt(int y, int m, int d) {
++        m = (m + 9) % 12;
++        y = y - m / 10;
++        return 365 * y + y / 4 - y / 100 + y / 400 + (m * 306 + 5) / 10
++                + (d - 1);
++    }
++
++    /**
++     * @param lunarYear 农历年份
++     * @return String of Ganzhi: 甲子年
++     * Tiangan:甲乙丙丁戊己庚辛壬癸: 子丑寅卯辰巳无为申酉戌亥
++     */
++    public static String lunarYearToGanZhi(int lunarYear) {
++        final String[] tianGan = {"甲", "乙", "丙", "丁", "戊", "己", "庚", "辛", "壬", "癸"};
++        final String[] diZhi = {"子", "丑", "寅", "卯", "辰", "巳", "午", "未", "申", "酉", "戌", "亥"};
++        return tianGan[(lunarYear - 4) % 10] + diZhi[(lunarYear - 4) % 12] + "年";
++    }
++
++
++    private static Solar SolarFromInt(long g) {
++        long y = (10000 * g + 14780) / 3652425;
++        long ddd = g - (365 * y + y / 4 - y / 100 + y / 400);
++        if (ddd < 0) {
++            y--;
++            ddd = g - (365 * y + y / 4 - y / 100 + y / 400);
++        }
++        long mi = (100 * ddd + 52) / 3060;
++        long mm = (mi + 2) % 12 + 1;
++        y = y + (mi + 2) / 12;
++        long dd = ddd - (mi * 306 + 5) / 10 + 1;
++        Solar solar = new Solar();
++        solar.solarYear = (int) y;
++        solar.solarMonth = (int) mm;
++        solar.solarDay = (int) dd;
++        return solar;
++    }
++
++    /**
++     * 阴历转阳历
++     *
++     * @param lunar
++     * @return
++     */
++    public static Solar LunarToSolar(Lunar lunar) {
++        int days = lunar_month_days[lunar.lunarYear - lunar_month_days[0]];
++        int leap = GetBitInt(days, 4, 13);
++        int offset = 0;
++        int loopend = leap;
++        if (!lunar.isLeap) {
++            if (lunar.lunarMonth <= leap || leap == 0) {
++                loopend = lunar.lunarMonth - 1;
++            } else {
++                loopend = lunar.lunarMonth;
++            }
++        }
++        for (int i = 0; i < loopend; i++) {
++            offset += GetBitInt(days, 1, 12 - i) == 1 ? 30 : 29;
++        }
++        offset += lunar.lunarDay;
++
++        int solar11 = solar_1_1[lunar.lunarYear - solar_1_1[0]];
++
++        int y = GetBitInt(solar11, 12, 9);
++        int m = GetBitInt(solar11, 4, 5);
++        int d = GetBitInt(solar11, 5, 0);
++
++        return SolarFromInt(SolarToInt(y, m, d) + offset - 1);
++    }
++
++    /**
++     * 阳历转阴历
++     *
++     * @param solar
++     * @return
++     */
++    public static Lunar SolarToLunar(Solar solar) {
++        Lunar lunar = new Lunar();
++        int index = solar.solarYear - solar_1_1[0];
++        int data = (solar.solarYear << 9) | (solar.solarMonth << 5)
++                | (solar.solarDay);
++        int solar11 = 0;
++        if (solar_1_1[index] > data) {
++            index--;
++        }
++        solar11 = solar_1_1[index];
++        int y = GetBitInt(solar11, 12, 9);
++        int m = GetBitInt(solar11, 4, 5);
++        int d = GetBitInt(solar11, 5, 0);
++        long offset = SolarToInt(solar.solarYear, solar.solarMonth,
++                solar.solarDay) - SolarToInt(y, m, d);
++
++        int days = lunar_month_days[index];
++        int leap = GetBitInt(days, 4, 13);
++
++        int lunarY = index + solar_1_1[0];
++        int lunarM = 1;
++        int lunarD = 1;
++        offset += 1;
++
++        for (int i = 0; i < 13; i++) {
++            int dm = GetBitInt(days, 1, 12 - i) == 1 ? 30 : 29;
++            if (offset > dm) {
++                lunarM++;
++                offset -= dm;
++            } else {
++                break;
++            }
++        }
++        lunarD = (int) (offset);
++        lunar.lunarYear = lunarY;
++        lunar.lunarMonth = lunarM;
++        lunar.isLeap = false;
++        if (leap != 0 && lunarM > leap) {
++            lunar.lunarMonth = lunarM - 1;
++            if (lunarM == leap + 1) {
++                lunar.isLeap = true;
++            }
++        }
++
++        lunar.lunarDay = lunarD;
++        return lunar;
++    }
++}
+diff --git a/src/main/java/com/cws/DateUtils/Solar.java b/src/main/java/com/cws/DateUtils/Solar.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..5216c6e8bd3951d3a7e35e930e63195e62c97082
+--- /dev/null
++++ b/src/main/java/com/cws/DateUtils/Solar.java
+@@ -0,0 +1,48 @@
++package com.cws.DateUtils;
++
++
++import lombok.Data;
++
++/**
++ * 阳历
++ */
++@Data
++public class Solar {
++    public int solarYear;
++    public int solarMonth;
++    public int solarDay;
++
++    /**
++     * 转成String类型的日期
++     *
++     * @return "yyyy-MM-dd"
++     */
++    public String getStringDate() {
++        StringBuilder stringBuilder = new StringBuilder();
++        stringBuilder.append(this.solarYear);
++        stringBuilder.append("-");
++        if (this.solarMonth < 10) {
++            stringBuilder.append(0);
++        }
++        stringBuilder.append(this.solarMonth);
++        stringBuilder.append("-");
++        if (this.solarDay < 10) {
++            stringBuilder.append(0);
++        }
++        stringBuilder.append(this.solarDay);
++        return stringBuilder.toString();
++    }
++
++    public void parseDate(String birthday) {
++        String[] split = birthday.split("-");
++        this.solarYear = Integer.parseInt(split[0]);
++        this.solarMonth = Integer.parseInt(split[1]);
++        this.solarDay = Integer.parseInt(split[2]);
++    }
++
++    @Override
++    public String toString() {
++        return solarYear + "年" + solarMonth + "月" + solarDay + "日";
++    }
++}
++
+diff --git a/src/main/java/com/cws/WechatPushApplication.java b/src/main/java/com/cws/WechatPushApplication.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..64f06995c960bd3ae4183b0f0bd89020e7953e0a
+--- /dev/null
++++ b/src/main/java/com/cws/WechatPushApplication.java
+@@ -0,0 +1,11 @@
++package com.cws;
++
++import org.springframework.boot.SpringApplication;
++import org.springframework.boot.autoconfigure.SpringBootApplication;
++
++@SpringBootApplication
++public class WechatPushApplication {
++    public static void main(String[] args) {
++        SpringApplication.run(WechatPushApplication.class, args);
++    }
++}
+diff --git a/src/main/java/com/cws/configure/PushConfigure.java b/src/main/java/com/cws/configure/PushConfigure.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..2fb84b39adf23b890f33b6ce3039606eb25b9185
+--- /dev/null
++++ b/src/main/java/com/cws/configure/PushConfigure.java
+@@ -0,0 +1,142 @@
++package com.cws.configure;
++
++import org.springframework.boot.context.properties.ConfigurationProperties;
++import org.springframework.stereotype.Component;
++
++import java.util.List;
++
++/**
++ * PushConfigure
++ *
++ * @author cws
++ * @date 2022/8/22 21:25
++ */
++@Component
++@ConfigurationProperties("wechat")
++public class PushConfigure {
++    /**
++     * 微信公众平台的appID
++     */
++    private static String appId;
++    /**
++     * 微信公众平台的appSecret
++     */
++    private static String secret;
++    /**
++     * 纪念日
++     */
++    private static String loveDate;
++    /**
++     * 生日
++     */
++    private static String birthday;
++    /**
++     * 关注公众号的用户ID
++     */
++    private static List<String> userId;
++    /**
++     * 模板ID
++     */
++    private static String templateId;
++
++    /**
++     * 天行数据apiKey
++     */
++    private static String rainbowKey;
++
++    /**
++     * 是否使用农历计算生日
++     */
++    private static boolean useLunar;
++
++     /**
++     * 和风天气AK
++     */
++    private static String QAK;
++
++     /**
++     * 和风天气城市LocID
++     */
++    private static String QLocId;
++
++    public static String getAppId() {
++        return appId;
++    }
++
++    public void setAppId(String appId) {
++        PushConfigure.appId = appId;
++    }
++
++    public static String getSecret() {
++        return secret;
++    }
++
++    public void setSecret(String secret) {
++        PushConfigure.secret = secret;
++    }
++
++    public static String getLoveDate() {
++        return loveDate;
++    }
++
++    public void setLoveDate(String loveDate) {
++        PushConfigure.loveDate = loveDate;
++    }
++
++    public static String getBirthday() {
++        return birthday;
++    }
++
++    public void setBirthday(String birthday) {
++        PushConfigure.birthday = birthday;
++    }
++
++    public static List<String> getUserId() {
++        return userId;
++    }
++
++    public void setUserId(List<String> userId) {
++        PushConfigure.userId = userId;
++    }
++
++    public static String getTemplateId() {
++        return templateId;
++    }
++
++    public void setTemplateId(String templateId) {
++        PushConfigure.templateId = templateId;
++    }
++
++    public static String getRainbowKey() {
++        return rainbowKey;
++    }
++
++    public void setRainbowKey(String rainbowKey) {
++        PushConfigure.rainbowKey = rainbowKey;
++    }
++
++    public static boolean isUseLunar() {
++        return useLunar;
++    }
++
++    public void setUseLunar(boolean useLunar) {
++        PushConfigure.useLunar = useLunar;
++    }
++
++    public static String getQAK() {
++        return QAK;
++    }
++
++    public void setQAK(String QAK){
++        PushConfigure.QAK = QAK;
++    }
++
++    public static String getQLocId() {
++        return QLocId;
++    }
++
++    public void setQLocId(String QLocId) {
++        PushConfigure.QLocId = QLocId;
++    }
++
++}
+diff --git a/src/main/java/com/cws/controller/TestController.java b/src/main/java/com/cws/controller/TestController.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..750174d87a81e53cd7d1a9d07d9dc9c45ea4ca50
+--- /dev/null
++++ b/src/main/java/com/cws/controller/TestController.java
+@@ -0,0 +1,18 @@
++package com.cws.controller;
++
++
++import com.cws.utils.PushUtil;
++import org.springframework.web.bind.annotation.RequestMapping;
++import org.springframework.web.bind.annotation.RestController;
++
++/**
++ * 测试手动推送
++ */
++@RestController
++public class TestController {
++
++    @RequestMapping("test")
++    public String test() {
++        return PushUtil.push();
++    }
++}
+diff --git a/src/main/java/com/cws/pojo/QWeather.java b/src/main/java/com/cws/pojo/QWeather.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..e0b3abd9f8613cccc13d595eea9d22fa76ab0d18
+--- /dev/null
++++ b/src/main/java/com/cws/pojo/QWeather.java
+@@ -0,0 +1,50 @@
++package com.cws.pojo;
++
++import lombok.Data;
++
++/**
++ * 和风天气数据
++ * //开发版 https://devapi.qweather.com/v7/weather/now?location=101010100&key=你的KEY
++ *
++ *   "code": "200",
++ *   "updateTime": "2020-06-30T22:00+08:00",
++ *   "fxLink": "http://hfx.link/2ax1",
++ *   "now": {
++ *     "obsTime": "2020-06-30T21:40+08:00",
++ *     "temp": "24",
++ *     "feelsLike": "26",
++ *     "icon": "101",
++ *     "text": "多云",
++ *     "wind360": "123",
++ *     "windDir": "东南风",
++ *     "windScale": "1",
++ *     "windSpeed": "3",
++ *     "humidity": "72",
++ *     "precip": "0.0",
++ *     "pressure": "1003",
++ *     "vis": "16",
++ *     "cloud": "10",
++ *     "dew": "21"
++ *   },
++ *   "refer": {
++ *     "sources": [
++ *       "QWeather",
++ *       "NMC",
++ *       "ECMWF"
++ *     ],
++ *     "license": [
++ *       "commercial license"
++ *     ]
++ *   }
++ * }
++ * @author wangxinqi
++ */
++@Data
++public class QWeather {
++    private String temp;
++    private String feelsLike;
++    private String text;
++    private String windDir;
++    private String windScale;
++
++}
+diff --git a/src/main/java/com/cws/pojo/Result.java b/src/main/java/com/cws/pojo/Result.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..be87cfc8ef2ba3742b6ef70f1344563ae9cc95fe
+--- /dev/null
++++ b/src/main/java/com/cws/pojo/Result.java
+@@ -0,0 +1,16 @@
++package com.cws.pojo;
++
++import lombok.Data;
++
++/**
++ * Result 响应数据对象
++ *
++ * @author cws
++ * @date 2022/8/24 9:25
++ */
++@Data
++public class Result {
++    private String code;
++    private String message;
++    private Object data;
++}
+diff --git a/src/main/java/com/cws/scheduled/Task.java b/src/main/java/com/cws/scheduled/Task.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..a5c83c6e438dd97567d129134cfc9ba989863eb0
+--- /dev/null
++++ b/src/main/java/com/cws/scheduled/Task.java
+@@ -0,0 +1,22 @@
++package com.cws.scheduled;
++
++import com.cws.utils.PushUtil;
++import org.springframework.context.annotation.Configuration;
++import org.springframework.scheduling.annotation.EnableScheduling;
++import org.springframework.scheduling.annotation.Scheduled;
++
++/**
++ * Task 定时任务
++ *
++ * @author cws
++ * @date 2022/8/22 21:42
++ */
++@EnableScheduling
++@Configuration
++public class Task {
++    // 定时 早8点推送  0秒 0分 8时 0 0 8 * * ?
++    @Scheduled(cron = "0 0 8 * * ?")
++    public void goodMorning() {
++        PushUtil.push();
++    }
++}
+diff --git a/src/main/java/com/cws/utils/MemoryDayUtil.java b/src/main/java/com/cws/utils/MemoryDayUtil.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..5db38c9a7dc528e5c36d884c8094d52bc89e0890
+--- /dev/null
++++ b/src/main/java/com/cws/utils/MemoryDayUtil.java
+@@ -0,0 +1,127 @@
++package com.cws.utils;
++
++
++import com.cws.DateUtils.Lunar;
++import com.cws.DateUtils.LunarSolarConverter;
++import com.cws.DateUtils.Solar;
++
++import java.text.ParseException;
++import java.text.SimpleDateFormat;
++import java.util.Calendar;
++import java.util.Date;
++
++/**
++ * 纪念日工具类
++ *
++ * @author cws
++ */
++public class MemoryDayUtil {
++    private static final ThreadLocal<SimpleDateFormat> THREAD_LOCAL = new ThreadLocal<>();
++
++    /**
++     * 获取SimpleDateFormat
++     *
++     * @return
++     */
++    private static SimpleDateFormat get() {
++        SimpleDateFormat sdf = THREAD_LOCAL.get();
++        if (sdf == null) {
++            sdf = new SimpleDateFormat("yyyy-MM-dd");
++            THREAD_LOCAL.set(sdf);
++        }
++        return sdf;
++    }
++
++    /**
++     * 计算两个时间差
++     */
++    public static long getDatePoor(Date endDate, Date nowDate) {
++        long nd = 1000 * 24 * 60 * 60;
++//        long nh = 1000 * 60 * 60;
++//        long nm = 1000 * 60;
++        // long ns = 1000;
++        // 获得两个时间的毫秒时间差异
++        long diff = endDate.getTime() - nowDate.getTime();
++        // 计算差多少天
++        long day = diff / nd;
++        // 计算差多少小时
++//        long hour = diff % nd / nh;
++        // 计算差多少分钟
++//        long min = diff % nd % nh / nm;
++        // 计算差多少秒//输出结果
++        // long sec = diff % nd % nh % nm / ns;
++        return day;
++    }
++
++    /**
++     * 计算距离纪念日的天数
++     *
++     * @param date
++     * @return
++     */
++    public static long calculationLianAi(String date) {
++        SimpleDateFormat simpleDateFormat = get();
++        Date startDate = new Date();
++        try {
++            startDate = simpleDateFormat.parse(date);
++        } catch (ParseException e) {
++            e.printStackTrace();
++        }
++        return getDatePoor(new Date(), startDate);
++    }
++
++    /**
++     * 计算距离生日天数（阳历）
++     *
++     * @param birthday 阳历生日
++     * @return
++     */
++    public static long calculationBirthday(String birthday) {
++        SimpleDateFormat simpleDateFormat = get();
++        Calendar cToday = Calendar.getInstance();
++        Calendar cBirth = Calendar.getInstance();
++        Date birth = new Date();
++        try {
++            birth = simpleDateFormat.parse(birthday);
++        } catch (ParseException e) {
++            e.printStackTrace();
++        }
++        cBirth.setTime(birth);
++        cBirth.set(Calendar.YEAR, cToday.get(Calendar.YEAR));
++        int days;
++        if (cBirth.get(Calendar.DAY_OF_YEAR) < cToday.get(Calendar.DAY_OF_YEAR)) {
++            //如果今年的生日已经过了
++            //计算距离过完今年还有多少天
++            days = cToday.getActualMaximum(Calendar.DAY_OF_YEAR) - cToday.get(Calendar.DAY_OF_YEAR);
++            //加上明天生日是在明天的第多少天
++            days += cBirth.get(Calendar.DAY_OF_YEAR);
++        } else {
++            days = cBirth.get(Calendar.DAY_OF_YEAR) - cToday.get(Calendar.DAY_OF_YEAR);
++        }
++        return days;
++    }
++
++    /**
++     * 计算距离生日天数（阴历）
++     *
++     * @param birthday 阳历生日  注意:虽然这里计算的是阴历生日,但参数仍然是阳历的生日
++     * @return
++     */
++    public static long calculationBirthdayByLunar(String birthday) {
++        Solar solar = new Solar();
++        solar.parseDate(birthday);
++        // 转农历
++        Lunar lunar = LunarSolarConverter.SolarToLunar(solar);
++        System.out.println("出生那年的阴历日期:" + lunar);
++        // 获取今年生日阳历日期
++        lunar.setLunarYear(Calendar.getInstance().getWeekYear());
++        solar = LunarSolarConverter.LunarToSolar(lunar);
++        System.out.println("今年生日的阳历日期:" + solar);
++        return calculationBirthday(solar.getStringDate());
++    }
++
++    public static void main(String[] args) {
++        System.out.println("阴历生日还有:" + calculationBirthdayByLunar("1998-01-06") + "天");
++        System.out.println("阳历生日还有:" + calculationBirthday("1998-01-06") + "天");
++    }
++}
+diff --git a/src/main/java/com/cws/utils/MorningUtil.java b/src/main/java/com/cws/utils/MorningUtil.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..b62f5f9631504c301634feee76665488a1b00480
+--- /dev/null
++++ b/src/main/java/com/cws/utils/MorningUtil.java
+@@ -0,0 +1,67 @@
++package com.cws.utils;
++
++import com.alibaba.fastjson.JSONArray;
++import com.alibaba.fastjson.JSONObject;
++import com.cws.configure.PushConfigure;
++import com.cws.pojo.Result;
++
++import java.io.BufferedReader;
++import java.io.InputStream;
++import java.io.InputStreamReader;
++import java.net.HttpURLConnection;
++import java.net.URL;
++
++/**
++ * 早安心语
++ * @author wangxinqi
++ */
++public class MorningUtil {
++    public static Result getMorning() {
++        String httpUrl = "http://api.tianapi.com/zaoan/index?key=" + PushConfigure.getRainbowKey();
++        BufferedReader reader = null;
++        String rs = null;
++        StringBuilder stringBuilder = new StringBuilder();
++
++        try {
++            URL url = new URL(httpUrl);
++            HttpURLConnection connection = (HttpURLConnection) url
++                    .openConnection();
++            connection.setRequestMethod("GET");
++            InputStream is = connection.getInputStream();
++            reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
++            String strRead = null;
++            while ((strRead = reader.readLine()) != null) {
++                stringBuilder.append(strRead);
++                stringBuilder.append("\r\n");
++            }
++            reader.close();
++            rs = stringBuilder.toString();
++        } catch (Exception e) {
++            e.printStackTrace();
++        }
++        JSONObject jsonObject = JSONObject.parseObject(rs);
++
++        Result result = new Result();
++        if (jsonObject == null) {
++            //接口地址有误或者接口没调通
++            result.setCode("500");
++            result.setMessage("天行数据接口不通,请检查接口地址!");
++            return result;
++        }
++//            获取接口响应状态
++        String code = jsonObject.getString("code");
++        if (!"200".equals(code)) {
++//            如果响应状态不为200,则调用出错
++            String msg = jsonObject.getString("msg");
++            result.setCode(code);
++            result.setMessage("天行数据接口调用报错:" + msg);
++            return result;
++        }
++        JSONArray newslist = jsonObject.getJSONArray("newslist");
++        String data = "\n" + newslist.getJSONObject(0).getString("content");
++        result.setCode(code);
++        result.setData(data);
++        return result;
++    }
++
++}
+diff --git a/src/main/java/com/cws/utils/PushUtil.java b/src/main/java/com/cws/utils/PushUtil.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..5b66bb00a14d0c7020a9bbf40c4d89dd3d5b73e4
+--- /dev/null
++++ b/src/main/java/com/cws/utils/PushUtil.java
+@@ -0,0 +1,163 @@
++package com.cws.utils;
++
++import com.cws.DateUtils.LunarCalendarFestivalUtils;
++import com.cws.configure.PushConfigure;
++import com.cws.pojo.QWeather;
++import com.cws.pojo.Result;
++import me.chanjar.weixin.common.error.WxErrorException;
++import me.chanjar.weixin.mp.api.WxMpInMemoryConfigStorage;
++import me.chanjar.weixin.mp.api.WxMpService;
++import me.chanjar.weixin.mp.api.WxMpTemplateMsgService;
++import me.chanjar.weixin.mp.api.impl.WxMpServiceImpl;
++import me.chanjar.weixin.mp.bean.template.WxMpTemplateData;
++import me.chanjar.weixin.mp.bean.template.WxMpTemplateMessage;
++
++import java.text.SimpleDateFormat;
++import java.util.Calendar;
++import java.util.Date;
++
++/**
++ * PushUtil
++ *
++ * @author cws
++ * @date 2022/8/22 21:40
++ */
++public class PushUtil {
++
++    private static WxMpTemplateMsgService wxService = null;
++
++    /**
++     * 消息推送主要业务代码
++     */
++    public static String push() {
++        // 构建模板消息
++        WxMpTemplateMessage templateMessage = WxMpTemplateMessage.builder()
++                .templateId(PushConfigure.getTemplateId())
++                .build();
++        // 计算天数
++        long loveDays = MemoryDayUtil.calculationLianAi(PushConfigure.getLoveDate());
++        long birthdays = 0;
++        if (PushConfigure.isUseLunar()) {
++            // 如果使用农历生日
++            birthdays = MemoryDayUtil.calculationBirthdayByLunar(PushConfigure.getBirthday());
++        } else {
++            birthdays = MemoryDayUtil.calculationBirthday(PushConfigure.getBirthday());
++        }
++        templateMessage.addData(new WxMpTemplateData("loveDays", loveDays + "", "#FF1493"));
++        templateMessage.addData(new WxMpTemplateData("birthdays", birthdays + "", "#FFA500"));
++
++        // 拿到农历日期
++        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
++        Date newDate = new Date();
++        //根据日期取得星期几
++        String week =  getWeek(newDate);
++        LunarCalendarFestivalUtils festival = new LunarCalendarFestivalUtils();
++        festival.initLunarCalendarInfo(sdf.format(newDate));
++        templateMessage.addData(new WxMpTemplateData("date", sdf.format(newDate) + "  " + week, "#C1D8FF"));
++        templateMessage.addData(new WxMpTemplateData("lunar", "农历" + festival.getLunarYear() + "年 " + festival.getLunarMonth() + "月" + festival.getLunarDay(), "#C1D8FF"));
++        templateMessage.addData(new WxMpTemplateData("festival", festival.getLunarTerm() + " " + festival.getSolarFestival() + " " + festival.getLunarFestival(), "#C1D8FF"));
++
++        StringBuilder messageAll = new StringBuilder();
++
++        // 获取和风天气数据
++        Result QweatherResult = QWeatherUtil.getQWeather();
++        StringBuilder qMessageAll = new StringBuilder();
++        if (!"200".equals(QweatherResult.getCode())) {
++            qMessageAll.append("<br/>");
++            qMessageAll.append(QweatherResult.getMessage());
++            templateMessage.addData(new WxMpTemplateData("weather", "***", "#00FFFF"));
++        } else {
++            QWeather weather = (QWeather) QweatherResult.getData();
++            templateMessage.addData(new WxMpTemplateData("city", "嘉善县", "#2A71E4"));
++            templateMessage.addData(new WxMpTemplateData("feelsLike", weather.getFeelsLike(), "#EE212D"));
++            templateMessage.addData(new WxMpTemplateData("text", weather.getText() + "", "#2A71E4"));
++            templateMessage.addData(new WxMpTemplateData("temp", weather.getTemp() + "", "#EE212D"));
++            templateMessage.addData(new WxMpTemplateData("windDir", weather.getWindDir() + "", "#EE212D"));
++            templateMessage.addData(new WxMpTemplateData("windScale", weather.getWindScale() + "", "#EE212D"));
++        }
++
++        // 天行数据接口
++        //彩虹屁
++        Result rainbowResult = RainbowUtil.getRainbow();
++        if (!"200".equals(rainbowResult.getCode())) {
++            messageAll.append("<br/>");
++            messageAll.append(rainbowResult.getMessage());
++        } else {
++            templateMessage.addData(new WxMpTemplateData("rainbow", (String) rainbowResult.getData(), "#FF69B4"));
++        }
++        //早安心语
++        Result morningResult = MorningUtil.getMorning();
++        if (!"200".equals(rainbowResult.getCode())) {
++            messageAll.append("<br/>");
++            messageAll.append(morningResult.getMessage());
++        } else {
++            templateMessage.addData(new WxMpTemplateData("morning", (String) morningResult.getData(), "#E98888"));
++        }
++
++        // 备注
++        String remark = "❤";
++        if (loveDays % 365 == 0) {
++            remark = "\n今天是破壳入世" + (loveDays / 365) + "周年了!";
++        }
++        if (birthdays == 0) {
++            remark = "\n今天是生日,生日快乐呀!";
++        }
++        if (loveDays % 365 == 0 && birthdays == 0) {
++            remark = "\n今天是生日,也是破壳入世" + (loveDays / 365) + "周年纪念日最近更新!";
++        }
++        templateMessage.addData(new WxMpTemplateData("remark", remark, "#FF1493"));
++
++
++        System.out.println(templateMessage.toJson());
++
++        // 拿到service
++        WxMpTemplateMsgService service = getService();
++
++        int suc = 0;
++        int err = 0;
++        for (String userId : PushConfigure.getUserId()) {
++            templateMessage.setToUser(userId);
++            try {
++                service.sendTemplateMsg(templateMessage);
++                suc += 1;
++            } catch (WxErrorException e) {
++                err += 1;
++                messageAll.append(suc).append("个成功!");
++                messageAll.append(err).append("个失败!");
++                messageAll.append("<br/>");
++                messageAll.append(e.getMessage());
++                return "推送结果:" + messageAll;
++            }
++        }
++
++        return "成功推送给" + suc + "个用户!" + messageAll;
++    }
++
++    private static String getWeek(Date newDate) {
++        String[] weeks = {"星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"};
++        Calendar cal = Calendar.getInstance();
++        cal.setTime(newDate);int week_index = cal.get(Calendar.DAY_OF_WEEK) - 1;
++        if(week_index<0){
++            week_index = 0;
++        }
++        return weeks[week_index];
++    }
++
++    /**
++     * 获取 WxMpTemplateMsgService
++     *
++     * @return WxMpTemplateMsgService
++     */
++    private static WxMpTemplateMsgService getService() {
++        if (wxService != null) {
++            return wxService;
++        }
++        WxMpInMemoryConfigStorage wxStorage = new WxMpInMemoryConfigStorage();
++        wxStorage.setAppId(PushConfigure.getAppId());
++        wxStorage.setSecret(PushConfigure.getSecret());
++        WxMpService wxMpService = new WxMpServiceImpl();
++        wxMpService.setWxMpConfigStorage(wxStorage);
++        wxService = wxMpService.getTemplateMsgService();
++        return wxService;
++    }
++}
+diff --git a/src/main/java/com/cws/utils/QWeatherUtil.java b/src/main/java/com/cws/utils/QWeatherUtil.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..30b2e0e057a56a552c445afd441aca11dccb7c3c
+--- /dev/null
++++ b/src/main/java/com/cws/utils/QWeatherUtil.java
+@@ -0,0 +1,83 @@
++package com.cws.utils;
++
++import com.alibaba.fastjson.JSONObject;
++import com.cws.configure.PushConfigure;
++import com.cws.pojo.QWeather;
++import com.cws.pojo.Result;
++import org.springframework.http.HttpMethod;
++import org.springframework.stereotype.Component;
++import org.springframework.web.client.RestTemplate;
++
++import java.io.ByteArrayInputStream;
++import java.io.ByteArrayOutputStream;
++import java.io.IOException;
++import java.io.InputStream;
++import java.nio.charset.StandardCharsets;
++import java.util.HashMap;
++import java.util.Map;
++import java.util.zip.GZIPInputStream;
++
++/**
++ * 获取和风天气
++ * @author wangxinqi
++ */
++@Component
++public class QWeatherUtil {
++    public static Result getQWeather() {
++        RestTemplate restTemplate = new RestTemplate();
++        Map<String, String> map = new HashMap<>();
++        map.put("QLocId", PushConfigure.getQLocId());
++        map.put("QAK", PushConfigure.getQAK());
++        //String res = restTemplate.getForObject("https://devapi.qweather.com/v7/weather/now?location={QLocId}&key={QAK}&lang=zh}", String.class, map);
++        //JSONObject json = JSONObject.parseObject(res);
++
++        String url = "https://devapi.qweather.com/v7/weather/now?lang=zh&location="+PushConfigure.getQLocId()+"&key="+PushConfigure.getQAK();
++        System.out.println("url==="+url);
++        byte[] oResult = restTemplate.exchange(url, HttpMethod.GET, null, byte[].class).getBody();
++        String unGZipResult = unGZip(oResult);
++        System.out.println(unGZipResult);
++        JSONObject json = JSONObject.parseObject(unGZipResult);
++
++        Result result = new Result();
++        if (json == null) {
++            //接口地址有误或者接口没调通
++            result.setCode("500");
++            result.setMessage("接口不通,请检查接口地址!");
++            return result;
++        }
++//            获取接口响应状态
++        String status = json.getString("code");
++        if (!"200".equals(status)) {
++//          //响应状态不为200即调用出错
++            result.setCode(status);
++            result.setMessage("天气接口调用报错:" + status);
++            return result;
++        }
++        JSONObject now = json.getJSONObject("now");
++        QWeather weather = new QWeather();
++        weather.setTemp(now.getString("temp"));
++        weather.setFeelsLike(now.getString("feelsLike"));
++        weather.setText(now.getString("text"));
++        weather.setWindDir(now.getString("windDir"));
++        weather.setWindScale(now.getString("windScale"));
++        result.setCode(status);
++        result.setData(weather);
++        return result;
++    }
++
++    private static String unGZip(byte[] oResult) {
++        try{
++            InputStream inputStream = new ByteArrayInputStream(oResult);
++            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
++            GZIPInputStream gzipInputStream = new GZIPInputStream(inputStream);
++            byte[] buf = new byte[4096];
++            int len = -1;
++            while ((len = gzipInputStream.read(buf, 0, buf.length)) != -1) {
++                byteArrayOutputStream.write(buf, 0, len);
++            }
++            return new String(byteArrayOutputStream.toByteArray(), StandardCharsets.UTF_8);
++        } catch (IOException e) {
++            throw new RuntimeException(e);
++        }
++    }
++}
+diff --git a/src/main/java/com/cws/utils/RainbowUtil.java b/src/main/java/com/cws/utils/RainbowUtil.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..38de7e2775cf16de506184104a448684aa61261b
+--- /dev/null
++++ b/src/main/java/com/cws/utils/RainbowUtil.java
+@@ -0,0 +1,68 @@
++package com.cws.utils;
++
++import com.alibaba.fastjson.JSONArray;
++import com.alibaba.fastjson.JSONObject;
++import com.cws.configure.PushConfigure;
++import com.cws.pojo.Result;
++
++import java.io.BufferedReader;
++import java.io.InputStream;
++import java.io.InputStreamReader;
++import java.net.HttpURLConnection;
++import java.net.URL;
++
++/**
++ * 彩虹屁接口调用
++ *
++ * @author cws
++ */
++public class RainbowUtil {
++    public static Result getRainbow() {
++        String httpUrl = "http://api.tianapi.com/caihongpi/index?key=" + PushConfigure.getRainbowKey();
++        BufferedReader reader = null;
++        String rs = null;
++        StringBuilder stringBuilder = new StringBuilder();
++
++        try {
++            URL url = new URL(httpUrl);
++            HttpURLConnection connection = (HttpURLConnection) url
++                    .openConnection();
++            connection.setRequestMethod("GET");
++            InputStream is = connection.getInputStream();
++            reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
++            String strRead = null;
++            while ((strRead = reader.readLine()) != null) {
++                stringBuilder.append(strRead);
++                stringBuilder.append("\r\n");
++            }
++            reader.close();
++            rs = stringBuilder.toString();
++        } catch (Exception e) {
++            e.printStackTrace();
++        }
++        JSONObject jsonObject = JSONObject.parseObject(rs);
++
++        Result result = new Result();
++        if (jsonObject == null) {
++            //接口地址有误或者接口没调通
++            result.setCode("500");
++            result.setMessage("天行数据接口不通,请检查接口地址!");
++            return result;
++        }
++//            获取接口响应状态
++        String code = jsonObject.getString("code");
++        if (!"200".equals(code)) {
++//            如果响应状态不为200,则调用出错
++            String msg = jsonObject.getString("msg");
++            result.setCode(code);
++            result.setMessage("天行数据接口调用报错:" + msg);
++            return result;
++        }
++        JSONArray newslist = jsonObject.getJSONArray("newslist");
++        String data = "\n" + newslist.getJSONObject(0).getString("content");
++        result.setCode(code);
++        result.setData(data);
++        return result;
++    }
++
++}
+\ No newline at end of file
+diff --git a/src/main/resources/application.yml b/src/main/resources/application.yml
+new file mode 100644
+index 0000000000000000000000000000000000000000..96c08e98db0d5ca01b10023f25ae2c5a2dc3a91a
+--- /dev/null
++++ b/src/main/resources/application.yml
+@@ -0,0 +1,26 @@
++server:
++  port: 10012
++wechat:
++  #  微信公众平台的appID
++  appId: 'wxb6989c8c84b604fd'
++  #  微信公众平台的appSecret
++  secret: '422a8079469dca40a9a3da050f54b99e'
++  #  纪念日：注意格式yyyy-MM-dd
++  loveDate: ''
++  #  生日：注意格式yyyy-MM-dd （无论是计算阳历生日还是农历生日,一律填阳历出生年月日）
++  birthday: ''
++  #  模板ID
++  templateId: 'Yj68S58r_GgFFzgqVRMO4-vysRyl5GGfWbjkJLnxAXI'
++  #  天行数据apiKey
++  rainbowKey: ''
++  #  关注公众号的用户ID（要推送的人的用户ID,在微信公众平台里可以查看到,现在支持推送多个人）
++  userId:
++    - 'oYqD15trG6aPlaCHHJecYn3Uu-40'
++    - ''
++  #    是否按农历计算生日 true:是 false:否
++  useLunar: true
++#@author wangxinqi 22/9/6
++  #和风天气AK
++  QAK: '	
+14ca322b4f754f269f27fafe2ed0e76a'
++  #和风天气API中的城市locid
++  QLocId: '济南'
+\ No newline at end of file
+diff --git a/src/main/resources/img/1.png b/src/main/resources/img/1.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..7d6c5ff497246efe8bf8b6210cf01ea843b91386
+Binary files /dev/null and b/src/main/resources/img/1.png differ
+diff --git a/src/main/resources/img/10.png b/src/main/resources/img/10.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..558e7fd924a257491cd99010788b14851e0bb6ce
+Binary files /dev/null and b/src/main/resources/img/10.png differ
+diff --git a/src/main/resources/img/11.png b/src/main/resources/img/11.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..131f285c9d4d9181a9f177ea83d860b5f263108f
+Binary files /dev/null and b/src/main/resources/img/11.png differ
+diff --git a/src/main/resources/img/12.png b/src/main/resources/img/12.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..0abf2c445e4408d55571905bf2406317b9871355
+Binary files /dev/null and b/src/main/resources/img/12.png differ
+diff --git a/src/main/resources/img/13.png b/src/main/resources/img/13.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..2165f1abf9d6c81109b073209448ae00cae624bf
+Binary files /dev/null and b/src/main/resources/img/13.png differ
+diff --git a/src/main/resources/img/2.png b/src/main/resources/img/2.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..3ef99ccff8f32e8a809a7b734f9c507f5927ae5f
+Binary files /dev/null and b/src/main/resources/img/2.png differ
+diff --git a/src/main/resources/img/3.png b/src/main/resources/img/3.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..4d8f44f7371c33ab880f38b155cf50e9d6f57b5f
+Binary files /dev/null and b/src/main/resources/img/3.png differ
+diff --git a/src/main/resources/img/4.png b/src/main/resources/img/4.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..92d31ffc1f1bdc955c12b187d42353f8ce96f859
+Binary files /dev/null and b/src/main/resources/img/4.png differ
+diff --git a/src/main/resources/img/5.png b/src/main/resources/img/5.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..bcac431dd608a74974a63c199700e6d0a553e705
+Binary files /dev/null and b/src/main/resources/img/5.png differ
+diff --git a/src/main/resources/img/6.png b/src/main/resources/img/6.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..e9fe56952e9f234b248928a655ea21957baa9693
+Binary files /dev/null and b/src/main/resources/img/6.png differ
+diff --git a/src/main/resources/img/7.png b/src/main/resources/img/7.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..a60204209126552612d0a2400899d9fd234b5667
+Binary files /dev/null and b/src/main/resources/img/7.png differ
+diff --git a/src/main/resources/img/8.png b/src/main/resources/img/8.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..27a08c6d092c6b4a8445df4791b7d93f09d99757
+Binary files /dev/null and b/src/main/resources/img/8.png differ
+diff --git a/src/main/resources/img/9.jpg b/src/main/resources/img/9.jpg
+new file mode 100644
+index 0000000000000000000000000000000000000000..ce37c0996e9053a4fccab59e2aa3c90f9f383b93
+Binary files /dev/null and b/src/main/resources/img/9.jpg differ
+diff --git a/src/test/java/com/cws/WechatPushApplicationTests.java b/src/test/java/com/cws/WechatPushApplicationTests.java
+new file mode 100644
+index 0000000000000000000000000000000000000000..189a376eb49bc6decd8527133262acc0d76ab7c6
+--- /dev/null
++++ b/src/test/java/com/cws/WechatPushApplicationTests.java
+@@ -0,0 +1,13 @@
++package com.cws;
++
++import org.junit.jupiter.api.Test;
++import org.springframework.boot.test.context.SpringBootTest;
++
++@SpringBootTest
++class WechatPushApplicationTests {
++
++    @Test
++    void contextLoads() {
++    }
++
++}
